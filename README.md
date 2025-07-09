@@ -8,24 +8,15 @@ A full-stack Weather Application built with Spring Boot and Vue.js that allows u
 - **External API**: Use a weather API like OpenWeatherMap to fetch weather data.
 
 ## Page Mockups
-- Index page:
 
+### Index page:
 <img src="readme_assets/index.png" alt="Alt text" width="50%">
 
----
-
-- Today page:
-
+### Today page:
 <img src="readme_assets/today.png" alt="Alt text" width="50%">
 
----
-
-- Hourly page:
-
+### Hourly page:
 <img src="readme_assets/hourly.png" alt="Alt text" width="50%">
 
----
-
-- Daily page:
-
+### Daily page:
 <img src="readme_assets/daily.png" alt="Alt text" width="50%">
