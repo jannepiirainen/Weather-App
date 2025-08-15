@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Today page</title>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+rel="stylesheet">
+</head>
+<body class="container">
+	<h1 class="display-4 mb-4">Today's weather</h1>
+	<button class="button disabled" disabled>Today</button>
+	
+	<form action="/hourly" method="get">
+	    <input type="hidden" name="city" th:value="${city}">
+	    <button type="submit">Hourly</button>
+	</form>
+	
+	<form action="/daily" method="get">
+	    <input type="hidden" name="city" th:value="${city}">
+	    <button type="submit">Daily</button>
+	</form>
+
+	<p th:text="'Here will be a summary of today\'s weather for ' + ${city} + '.'"></p>
+</body>
+</html>
