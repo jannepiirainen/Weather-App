@@ -7,12 +7,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class HelloController {
+public class WeatherController {
 	private boolean flag = false;
 	
 	@RequestMapping("/")
 	public ModelAndView index(ModelAndView mav) {
-		mav.addObject("msg", "Welcome to the weather app");
 		mav.setViewName("index");
 		return mav;
 	}
